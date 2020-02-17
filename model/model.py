@@ -51,6 +51,3 @@ class City(Base):
     school_count = Column(Integer, nullable=False)
 
 
-# statements in raw SQL.
-print(SessionManager.get_session().query)
-Base.metadata.create_all(Engine.get_engine())

@@ -1,1 +1,4 @@
+kafka-python==2.0.0
+psycopg2==2.8.4
 SQLAlchemy==1.3.13
+-e git+https://github.com/andrisole92/VectorAI.git@dd7b06d888f784aff81b49c571486240d5ca98b0#egg=vector
