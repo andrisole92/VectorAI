@@ -8,10 +8,10 @@ def post(data):
     # print("post")
     # session = SessionManager.get_session()
 
-    city = City(name=data['name'], population=data['population'], area=data['population'],
+    city = City(name=data['name'], area=data['area'],
                 road_count=data['road_count'],
                 tree_count=data['tree_count'], shop_count=data['shop_count'],
-                school_count=data['school_count'], country_id=data['country_id'])
+                school_count=data['school_count'], country_id=data['country_id'], population=data['population'])
     session.add(city)
     session.commit()
     # session.close()
@@ -47,10 +47,10 @@ sample = City.get_sample()
 # #     delete(sample)
 # # except Exception as e:
 # #     print(f'except, sorry: {str(e)}')
-# try:
-#     print(sample)
-# except Exception as e:
-#     print(f'except, sorry: {str(e)}')
+try:
+    post(sample)
+except Exception as e:
+    print(f'except, sorry: {str(e)}')
 # try:
 #     put(sample)
 # except Exception as e:
