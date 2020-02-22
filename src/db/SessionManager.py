@@ -2,7 +2,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 # Generating Sessions
-from db import Engine
+from src.db import Engine
 
 
 class SessionManager:
